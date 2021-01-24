@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@500&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Salary Counter</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="title center">
+        <h1>To easily count my daily salary</h1>
+      </header>
+      <main>
+        <div class="date-container" id="show">
+          <div class="date">
+              <span id="month"></span> 
+              <span id="date"></span>
+          </div>
+          <div class="working-choices">
+            <p class="choice">Choose:</p>
+            <div class="full time-choice">Full</div>
+            <div class="half time-choice">Half</div>
+            <div class="off time-choice"> day off</div>
+          </div>
+        </div>
+        <div class="salary hidden" id="hidden">
+          <p>
+            Your Cash For Today : <span id="daily-income">0 </span><span class="currency"> UZS</span>
+          </p>
+          <p>
+              All Salary: <span id="all-salary">0 </span><span class="currency"> UZS</span>
+          </p>
+          <i class="fas fa-arrow-circle-left" id="prevBtn"></i>
+        </div>
+      </main>
+      <footer class="center">Creator @dawroun</footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
