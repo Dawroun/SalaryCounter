@@ -36,22 +36,15 @@ timeChoice.forEach((item) => {
     if (item.classList.contains("full")) {
       dailyIncome.innerHTML = "100 000";
       fullIncome += 100000;
-      localStorage.setItem('summary', JSON.stringify(fullIncome));
-      let newValue = JSON.parse(window.localStorage.getItem('summary'));
-      allSalary.innerHTML = newValue;
+      allSalary.innerHTML = fullIncome;
     } else if (item.classList.contains("half")) {
       dailyIncome.innerHTML = "50 000";
       fullIncome += 50000;
-      localStorage.setItem('summary', JSON.stringify(fullIncome));
-      let newValue = JSON.parse(window.localStorage.getItem('summary'));
-      allSalary.innerHTML = newValue;
+      allSalary.innerHTML = fullIncome;
     } else if (item.classList.contains("off")) {
       dailyIncome.innerHTML = 0;
-      localStorage.setItem('summary', JSON.stringify(fullIncome));
-      let newValue = JSON.parse(window.localStorage.getItem('summary'));
-      allSalary.innerHTML = newValue;
-    }
-    
+      allSalary.innerHTML = fullIncome;
+    }    
   });
 });
 
